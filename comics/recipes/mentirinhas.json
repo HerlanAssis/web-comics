@@ -1,7 +1,7 @@
 {
     "language": "pt-br",
     "url": "http://mentirinhas.com.br/",
-    "url_preffix": "http://mentirinhas.com.br",
+    "url_preffix": "http://mentirinhas.com.br/",
     "extract": {
         "from": "article",
         "target": "img",
