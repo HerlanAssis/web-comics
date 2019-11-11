@@ -1,0 +1,14 @@
+{
+    "language": "pt-br",
+    "url": "https://www.umsabadoqualquer.com/",
+    "url_preffix": "",
+    "extract": {
+        "from": "article",
+        "target": "img",
+        "atribute": "src",
+        "pattern": "uploads",
+        "args": {}
+    },
+    "first_page_suffix": "page/{}/",
+    "next_page_suffix": "page/{}/"
+}

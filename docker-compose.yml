@@ -1,0 +1,27 @@
+version: "3"
+
+services:
+  # Cache Machines
+  cache:
+    image: memcached:1.5
+    command: memcached -m 64
+
+  comics:
+    container_name: comics
+    build: comics/
+    command: gunicorn --bind 0.0.0.0:5000 wsgi:app
+    env_file:
+      - "comics/.env"
+
+  server:
+    build: server/
+    container_name: server
+    ports:
+      - "5000:80"
+
+  # Frontend Machines
+  hq:
+    build: hq/
+    container_name: hq
+    ports:
+      - "80:80"

@@ -1,0 +1,16 @@
+{
+    "language": "pt-br",
+    "url": "https://blog.drpepper.com.br/",
+    "url_preffix": "",
+    "extract": {
+        "from": "div",
+        "target": "img",
+        "atribute": "src",
+        "pattern": "uploads",
+        "args": {
+            "class_": "entry-content"
+        }
+    },
+    "first_page_suffix": "page/{}/",
+    "next_page_suffix": "page/{}/"
+}

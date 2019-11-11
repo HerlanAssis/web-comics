@@ -1,0 +1,16 @@
+{
+    "language": "pt-br",
+    "url": "https://vidadeprogramador.com.br/",
+    "url_preffix": "",
+    "extract": {
+        "from": "div",
+        "target": "img",
+        "atribute": "src",
+        "pattern": "uploads",
+        "args": {
+            "class_": "tirinha"
+        }
+    },
+    "first_page_suffix": "",
+    "next_page_suffix": "index-{}.html"
+}

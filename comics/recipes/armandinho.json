@@ -1,0 +1,17 @@
+{
+    "language": "pt-br",
+    "url": "https://tirasarmandinho.tumblr.com/",
+    "url_preffix":"",
+    "extract": {
+        "from": "div",
+        "args": {
+            "class_": "photo-wrapper-inner"
+        },
+
+        "target": "img",
+        "atribute": "src",
+        "pattern": "tumblr"
+    },
+    "first_page_suffix": "",
+    "next_page_suffix": "page/{}/"
+}

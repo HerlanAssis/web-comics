@@ -1,0 +1,16 @@
+{
+    "language": "pt-br",
+    "url": "http://bichinhosdejardim.com/",
+    "url_preffix": "",
+    "extract": {
+        "from": "div",
+        "target": "img",
+        "atribute": "src",
+        "pattern": "uploads",
+        "args": {
+            "class_": "entry"
+        }
+    },
+    "first_page_suffix": "page/{}/",
+    "next_page_suffix": "page/{}/"
+}

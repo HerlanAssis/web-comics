@@ -1,0 +1,17 @@
+{
+    "language": "pt-br",
+    "url": "http://www.willtirando.com.br/",
+    "url_preffix": "",
+    "extract": {
+        "from": "div",
+        "target": "img",
+        "atribute": "src",
+        "pattern": "uploads",
+        "args": {
+            "id": "primary",
+            "class_": "content-area"
+        }
+    },
+    "first_page_suffix": "page/{}/",
+    "next_page_suffix": "page/{}/"
+}
