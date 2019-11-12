@@ -4,12 +4,14 @@
     "url_preffix": "",
     "extract": {
         "from": "div",
-        "target": "img",
-        "atribute": "src",
-        "pattern": "imgur",
         "args": {
             "class_": "entry"
-        }
+        },
+        "target": "img",
+        "atribute": "src",
+        "patterns": [
+            "imgur"
+        ]
     },
     "first_page_suffix": "",
     "next_page_suffix": "page/{}/"

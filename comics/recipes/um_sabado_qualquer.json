@@ -4,10 +4,12 @@
     "url_preffix": "",
     "extract": {
         "from": "article",
+        "args": {},
         "target": "img",
         "atribute": "src",
-        "pattern": "uploads",
-        "args": {}
+        "patterns": [
+            "uploads"
+        ]
     },
     "first_page_suffix": "page/{}/",
     "next_page_suffix": "page/{}/"

@@ -64,8 +64,7 @@ class Extractor:
             extracteds = []
 
             for html_element in html_elements.find_all(self._extract['target']):
-                if self._extract['pattern'] in html_element[self._extract['atribute']]:
-
+                if any(pattern in html_element[self._extract['atribute']] for pattern in self._extract['patterns']):
                     extracteds.append("{}{}".format(
                         self._url_preffix, html_element[self._extract['atribute']]))
 
