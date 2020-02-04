@@ -16,6 +16,8 @@ Neste projeto, foi utilizados algumas tiras brasileiras, para consultar a fonte 
 # Atenção
 Este projeto não tem intenção alguma de lucrar com o trabalho alheio ou violar qualquer direito.
 
+![](web-comics.gif)
+
 ## Pré-requisitos
 
 Antes de executar o projeto, verifique se você atendeu aos seguintes requisitos:
