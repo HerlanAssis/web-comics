@@ -5,6 +5,7 @@
 ![GitHub contributors](https://img.shields.io/github/contributors/herlanassis/web-comics)
 ![GitHub stars](https://img.shields.io/github/stars/herlanassis/web-comics?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/herlanassis/web-comics?style=social)
+![GitHub forks](https://img.shields.io/github/issues-raw/herlanassis/web-comics?style=social)
 ![Twitter Follow](https://img.shields.io/twitter/follow/herlanassis?style=social)
 
 Web Comics é uma `ferramenta` que permite aos `leitores de HQ` extrair e ler `várias tirinhas` em um único lugar.
@@ -55,8 +56,6 @@ git clone https://github.com/HerlanAssis/web-comics;
 cd web-comics;
 docker-compose up -d --build;
 ```
-
-Você também pode testar esse projeto sem necessitar de nenhuma instalação
 
 ## Utilizando web-comics
 
