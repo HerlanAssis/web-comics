@@ -11,9 +11,9 @@ Web Comics é uma `ferramenta` que permite aos `leitores de HQ` extrair e ler `v
 
 O foco deste projeto é mostar, de forma exagerada, como é bom ler várias tiras (muitas mesmo), sem ser bombardiados por propagandas ou ter que navegar entre vários sites.
 
-Neste projeto, foi utilizados algumas tiras brasileiras, para consultar a fonte basta [acessar aqui](https://github.com/HerlanAssis/web-comics/tree/master/comics/recipes);
+Neste projeto, foi utilizados algumas tiras brasileiras, para consultar a fonte basta [acessar aqui](https://github.com/HerlanAssis/web-comics/tree/master/comics/recipes).
 
-# :alert: Atenção :alert:
+# Atenção
 Este projeto não tem intenção alguma de lucrar com o trabalho alheio ou violar qualquer direito.
 
 ## Pré-requisitos
@@ -27,9 +27,9 @@ Antes de executar o projeto, verifique se você atendeu aos seguintes requisitos
 
 Você pode escolher entre:
 
-Para executar o web-comics, siga estes passos:
+Para executar o web-comics, siga SOMENTE um destes passos:
 
-### 1 - Serviço de container gratuito
+### 1 - Nuvem (Serviço de container gratuito)
 
 * Crie uma conta e faça login no [Docker Playground](https://labs.play-with-docker.com/);
 * Crie uma nova instância;
@@ -45,7 +45,7 @@ echo "export const BASE_URL = '<url_da_porta_5000>'" >> hq/src/constants/urls.js
 docker-compose up -d --build;
 ```
 
-### 2 - Bare Metal
+### 2 - Localhost (Bare Metal)
 
 Linux, Windows ou macOS:
 ```shell
