@@ -1,0 +1,21 @@
+{
+    "language": "pt-br",
+    "url": "http://depositodowes.com/",
+    "url_preffix": "",
+    "extract": {
+        "from": "div",
+        "args": {
+            "class_": [
+                "wp-block-image",
+                "entry-content"
+            ]
+        },
+        "target": "img",
+        "atribute": "src",
+        "patterns": [
+            "imagens"
+        ]
+    },
+    "first_page_suffix": "",
+    "next_page_suffix": "page/{}/"
+}

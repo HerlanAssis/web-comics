@@ -1,0 +1,18 @@
+{
+    "language": "pt-br",
+    "url": "http://www.teoeominimundo.com.br/",
+    "url_preffix": "",
+    "extract": {
+        "from": "div",
+        "args": {
+            "class_": "entry-content"
+        },
+        "target": "img",
+        "atribute": "src",
+        "patterns": [
+            "uploads"
+        ]
+    },
+    "first_page_suffix": "",
+    "next_page_suffix": "page/{}/"
+}

@@ -1,0 +1,22 @@
+{
+    "language": "pt-br",
+    "url": "http://mentirinhas.com.br/",
+    "url_preffix": "http://mentirinhas.com.br/",
+    "extract": {
+        "from": "article",
+        "args": {
+            "class_": [
+                "category-post",
+                "post",
+                "first"
+            ]
+        },
+        "target": "img",
+        "atribute": "src",
+        "patterns": [
+            "uploads"
+        ]
+    },
+    "first_page_suffix": "",
+    "next_page_suffix": "page/{}/"
+}

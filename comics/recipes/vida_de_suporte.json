@@ -1,0 +1,16 @@
+{
+    "language": "pt-br",
+    "url": "https://vidadesuporte.com.br/",
+    "url_preffix": "",
+    "extract": {
+        "from": "div",
+        "args": {
+            "class_": "post"
+        },
+        "target": "img",
+        "atribute": "src",
+        "patterns": "uploads"
+    },
+    "first_page_suffix": "page/{}/",
+    "next_page_suffix": "page/{}/"
+}

@@ -1,0 +1,26 @@
+version: "3"
+
+services:
+  # Cache Machines
+  cache:
+    image: memcached:1.5
+    command: memcached -m 64
+
+  comics:
+    image: herlanassis/webc.comics:latest
+    container_name: comics
+    command: gunicorn --bind 0.0.0.0:5000 wsgi:app
+    environment:
+      CACHE_HOST: cache
+      CACHE_PORT: 11211
+    ports:
+      - "5000:5000"
+
+  # Frontend Machines
+  hq:
+    image: herlanassis/webc.hq:latest
+    container_name: hq
+    ports:
+      - "80:80"
+    depends_on:
+      - comics
