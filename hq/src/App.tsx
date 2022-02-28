@@ -66,7 +66,8 @@ function App() {
 
   const getNext = React.useCallback(() => {
     if (canNext) {
-      setPage((currentPage) => currentPage++);
+      setData([]);
+      setPage((currentPage) => currentPage + 1);
     }
   }, [canNext]);
 
