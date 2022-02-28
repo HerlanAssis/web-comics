@@ -1,18 +1,18 @@
 {
   "language": "pt-br",
-  "name": "vacilandia",
-  "url": "https://vacilandia.com/",
+  "url": "https://www.umsabadoqualquer.com/",
   "url_preffix": "",
+  "render_javascript": true,
   "extract": {
     "from": "div",
-    "args": {
-      "class_": "entry-content"
-    },
+    "args": {},
     "target": "img",
     "atribute": "src",
-    "patterns": ["uploads"],
+    "patterns": [
+      "uploads"
+    ],
     "exclusionary": []
   },
-  "first_page_suffix": "",
+  "first_page_suffix": "page/{}/",
   "next_page_suffix": "page/{}/"
 }

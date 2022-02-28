@@ -1,19 +1,18 @@
 {
-    "language": "pt-br",
-    "url": "https://blog.drpepper.com.br/",
-    "url_preffix": "",
-    "extract": {
-        "from": "div",
-        "args": {
-            "class_": "entry-content"
-        },
-        "target": "img",
-        "atribute": "src",
-        "patterns": [
-            "uploads",
-            "tirinhas"
-        ]
+  "language": "pt-br",
+  "name": "doutorpepper",
+  "url": "https://doutorpepper.com.br/",
+  "url_preffix": "",
+  "extract": {
+    "from": "div",
+    "args": {
+      "class_": "entry-content"
     },
-    "first_page_suffix": "page/{}/",
-    "next_page_suffix": "page/{}/"
+    "target": "img",
+    "atribute": "src",
+    "patterns": ["uploads", "tirinhas"],
+    "exclusionary": []
+  },
+  "first_page_suffix": "page/{}/",
+  "next_page_suffix": "page/{}/"
 }

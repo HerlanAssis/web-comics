@@ -1,18 +1,18 @@
 {
-    "language": "pt-br",
-    "url": "https://tirasarmandinho.tumblr.com/",
-    "url_preffix": "",
-    "extract": {
-        "from": "div",
-        "args": {
-            "class_": "photo-wrapper-inner"
-        },
-        "target": "img",
-        "atribute": "src",
-        "patterns": [
-            "tumblr"
-        ]
+  "language": "pt-br",
+  "name": "tirasarmandinho",
+  "url": "https://tirasarmandinho.tumblr.com/",
+  "url_preffix": "",
+  "extract": {
+    "from": "div",
+    "args": {
+      "class_": "photo-wrapper-inner"
     },
-    "first_page_suffix": "",
-    "next_page_suffix": "page/{}/"
+    "target": "img",
+    "atribute": "src",
+    "patterns": ["tumblr"],
+    "exclusionary": []
+  },
+  "first_page_suffix": "",
+  "next_page_suffix": "page/{}/"
 }

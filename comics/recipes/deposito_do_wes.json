@@ -1,21 +1,18 @@
 {
-    "language": "pt-br",
-    "url": "http://depositodowes.com/",
-    "url_preffix": "",
-    "extract": {
-        "from": "div",
-        "args": {
-            "class_": [
-                "wp-block-image",
-                "entry-content"
-            ]
-        },
-        "target": "img",
-        "atribute": "src",
-        "patterns": [
-            "imagens"
-        ]
+  "language": "pt-br",
+  "name": "depositodowes",
+  "url": "http://depositodowes.com/",
+  "url_preffix": "",
+  "extract": {
+    "from": "div",
+    "args": {
+      "class_": ["wp-block-image", "entry-content"]
     },
-    "first_page_suffix": "",
-    "next_page_suffix": "page/{}/"
+    "target": "img",
+    "atribute": "src",
+    "patterns": ["imagens"],
+    "exclusionary": []
+  },
+  "first_page_suffix": "",
+  "next_page_suffix": "page/{}/"
 }

@@ -1,16 +1,18 @@
 {
-    "language": "pt-br",
-    "url": "https://vidadesuporte.com.br/",
-    "url_preffix": "",
-    "extract": {
-        "from": "div",
-        "args": {
-            "class_": "post"
-        },
-        "target": "img",
-        "atribute": "src",
-        "patterns": "uploads"
+  "language": "pt-br",
+  "name": "vidadesuporte",
+  "url": "https://vidadesuporte.com.br/",
+  "url_preffix": "",
+  "extract": {
+    "from": "div",
+    "args": {
+      "class_": "post"
     },
-    "first_page_suffix": "page/{}/",
-    "next_page_suffix": "page/{}/"
+    "target": "img",
+    "atribute": "src",
+    "patterns": ["uploads"],
+    "exclusionary": ["Flagras"]
+  },
+  "first_page_suffix": "page/{}/",
+  "next_page_suffix": "page/{}/"
 }

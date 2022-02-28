@@ -1,18 +1,18 @@
 {
-    "language": "pt-br",
-    "url": "http://bichinhosdejardim.com/",
-    "url_preffix": "",
-    "extract": {
-        "from": "div",
-        "args": {
-            "class_": "entry"
-        },
-        "target": "img",
-        "atribute": "src",
-        "patterns": [
-            "uploads"
-        ]
+  "language": "pt-br",
+  "name": "bichinhosdejardim",
+  "url": "http://bichinhosdejardim.com/",
+  "url_preffix": "",
+  "extract": {
+    "from": "div",
+    "args": {
+      "class_": "entry"
     },
-    "first_page_suffix": "page/{}/",
-    "next_page_suffix": "page/{}/"
+    "target": "img",
+    "atribute": "src",
+    "patterns": ["uploads"],
+    "exclusionary": []
+  },
+  "first_page_suffix": "page/{}/",
+  "next_page_suffix": "page/{}/"
 }

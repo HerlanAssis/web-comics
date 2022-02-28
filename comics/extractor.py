@@ -43,18 +43,6 @@ class Extractor:
 
         return self
 
-    # def get_next_page(self):
-    #     if self._has_next_page:
-    #         self._page_number += 1
-    #         return self._get_page()
-    #     return self
-
-    # def get_prev_page(self):
-    #     if self._has_prev_page:
-    #         self._page_number -= 1
-    #         return self._get_page()
-    #     return self
-
     def extract_comics(self):
         soup = BeautifulSoup(self._page, 'html.parser')
 
@@ -64,7 +52,7 @@ class Extractor:
             extracteds = []
 
             for html_element in html_elements.find_all(self._extract['target']):
-                if any(pattern in html_element[self._extract['atribute']] for pattern in self._extract['patterns']):
+                if not any(exclusionary in html_element[self._extract['atribute']] for exclusionary in self._extract['exclusionary']) and any(pattern in html_element[self._extract['atribute']] for pattern in self._extract['patterns']):
                     extracteds.append("{}{}".format(
                         self._url_preffix, html_element[self._extract['atribute']]))
 

@@ -1,18 +1,18 @@
 {
-    "language": "pt-br",
-    "url": "https://vidadeprogramador.com.br/",
-    "url_preffix": "",
-    "extract": {
-        "from": "div",
-        "args": {
-            "class_": "tirinha"
-        },
-        "target": "img",
-        "atribute": "src",
-        "patterns": [
-            "uploads"
-        ]
+  "language": "pt-br",
+  "name": "vidadeprogramador",
+  "url": "https://vidadeprogramador.com.br/",
+  "url_preffix": "",
+  "extract": {
+    "from": "div",
+    "args": {
+      "class_": "tirinha"
     },
-    "first_page_suffix": "",
-    "next_page_suffix": "index-{}.html"
+    "target": "img",
+    "atribute": "src",
+    "patterns": ["uploads"],
+    "exclusionary": ["Flagras"]
+  },
+  "first_page_suffix": "",
+  "next_page_suffix": "index-{}.html"
 }

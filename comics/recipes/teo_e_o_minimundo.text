@@ -1,16 +1,15 @@
 {
   "language": "pt-br",
-  "name": "vacilandia",
-  "url": "https://vacilandia.com/",
+  "url": "http://www.teoeominimundo.com.br/",
   "url_preffix": "",
   "extract": {
-    "from": "div",
+    "from": "article",
     "args": {
-      "class_": "entry-content"
+      "class_": ["page", "type-page"]
     },
     "target": "img",
     "atribute": "src",
-    "patterns": ["uploads"],
+    "patterns": ["assets"],
     "exclusionary": []
   },
   "first_page_suffix": "",

@@ -1,5 +1,5 @@
 import os
-from werkzeug.contrib.cache import MemcachedCache
+from pymemcache.client import base
 
 
 class RepoCache:
@@ -9,9 +9,9 @@ class RepoCache:
         # cache_username = os.environ.get('CACHE_USERNAME')
         # cache_password = os.environ.get('CACHE_PASSWORD')
 
-        self._cache = MemcachedCache(['{}:{}'.format(cache_host, cache_port)])
+        self._cache = base.Client((cache_host, cache_port))
         # self._cache = bmemcached.Client(
-            # [cache_host], username=cache_username, password=cache_password)
+        # [cache_host], username=cache_username, password=cache_password)
 
         self._timeout = timeout
         self._version = version
