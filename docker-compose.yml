@@ -7,7 +7,7 @@ services:
     command: memcached -m 64
 
   comics:
-    # image: herlanassis/webc.comics:latest
+    image: herlanassis/webc.comics:latest
     build:
       context: ./comics
       dockerfile: Dockerfile
@@ -21,7 +21,7 @@ services:
 
   # Frontend Machines
   hq:
-    # image: herlanassis/webc.hq:latest
+    image: herlanassis/webc.hq:latest
     build:
       context: ./hq
       dockerfile: Dockerfile
