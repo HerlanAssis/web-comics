@@ -1,6 +1,5 @@
 import React from "react";
 import { Comics } from "./services";
-import Axios from "axios";
 import logo from "./logo.svg";
 import "./App.css";
 
@@ -43,17 +42,21 @@ function App() {
       const promises = recipes.map((recipe) => getRecipe(recipe, page));
 
       setIsLoading(true);
-      Axios.all(promises)
-        .then((all) => {
-          const allResults = all.map((result) => result.data.results).flat();
-
-          setData((currentData) => {
-            return Array.from(new Set([...currentData, ...allResults]));
+      promises.forEach((promise) => {
+        promise
+          .then((response) => {
+            const result = response.data.results;
+            setData((currentData) => {
+              return Array.from(new Set([...currentData, ...result]));
+            });
+          })
+          .catch((e) => {
+            console.error(e);
+          })
+          .finally(() => {
+            setIsLoading(true);
           });
-        })
-        .finally(() => {
-          setIsLoading(false);
-        });
+      });
     }
   }, [getRecipe, page, recipes]);
 
