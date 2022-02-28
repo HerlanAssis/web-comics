@@ -29,13 +29,13 @@ class Comics:
         return self._recipes
 
     def get_comics(self, recipe_name):
-        comics = []
+        comics = None
 
         recipe = self._recipes[recipe_name]
 
         if recipe_name:
-            comics.append(self._extractor.set_params(
-                self._headers, **recipe).get_page(self._page).extract_comics())
+            comics = self._extractor.set_params(
+                self._headers, **recipe).get_page(self._page).extract_comics()
 
         self._comics = comics
 
