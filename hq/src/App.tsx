@@ -54,7 +54,7 @@ function App() {
             console.error(e);
           })
           .finally(() => {
-            setIsLoading(true);
+            setIsLoading(false);
           });
       });
     }
