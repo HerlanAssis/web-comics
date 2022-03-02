@@ -32,7 +32,7 @@ class Extractor:
                 page = requests.get(
                     url=url,
                     headers=self._headers,
-                    timeout=45,
+                    timeout=(10, 20),
                     allow_redirects=True,
                 ).text
                 self._cache.set_cache(url, page)
