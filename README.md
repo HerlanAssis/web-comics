@@ -52,6 +52,12 @@ docker-compose up -d --build;
 
 Para usar web-comics abra `localhost` no seu navegador OU acessar no link da porta 80 (para quem optou pela opção 1 nos passos anteriores).
 
+## TODO
+
+[ ] Adaptar script para extrair tiras de sites que executam consulta via ajax;
+
+[ ] Escrever testes;
+
 ## Contribuindo para web-comics
 
 Para contribuir com web-comics, siga estes passos:
